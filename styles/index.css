@@ -3,7 +3,7 @@
 }
 
 body {
-  min-width: 320px;
+  min-width: 375px;
   background-color: var(--dark-primary);
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -78,22 +78,23 @@ main {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 5rem;
 }
 
 .about_me div {
-  width: 50%;
-  min-width: 200px;
+  min-width: 280px;
   margin: 0 auto;
+  width: 50%;
 }
 
 .about_me .square {
   aspect-ratio: 1/1;
   max-height: 400px;
-  /* width: 100%; */
+  width: 100%;
   background-color: gray;
   object-fit: cover;
+  box-shadow: 10px 10px 20px 3px #0e0e0e;
 }
 
 .about_me div p {
@@ -105,8 +106,9 @@ main {
 
 
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
   .about_me {
     flex-direction: row;
+    gap: 60px;
   }
 }
