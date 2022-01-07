@@ -1,0 +1,112 @@
+:root {
+  --dark-primary: #171717;
+}
+
+body {
+  min-width: 320px;
+  background-color: var(--dark-primary);
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+/* **** */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  background-color: #000000e0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+header a.logo {
+  font-size: 1.5rem;
+}
+
+header a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header nav a:hover {
+  color: #aaa;
+}
+
+main {
+  padding: 0 10%;
+}
+
+/* **** */
+.hero {
+  margin: 9rem 0 6rem;
+}
+
+.hero img {
+  width: 64px;
+  background: #394a99;
+  background: linear-gradient(90deg,#394a99 29%,#1f2952 82%);
+  border-radius: 50%;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.hero p {
+  width: 60%;
+  min-width: 280px;
+  font-size: 1.5rem;
+}
+
+/* **** */
+.about_me {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 5rem;
+}
+
+.about_me div {
+  width: 50%;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.about_me .square {
+  aspect-ratio: 1/1;
+  max-height: 400px;
+  /* width: 100%; */
+  background-color: gray;
+  object-fit: cover;
+}
+
+.about_me div p {
+  margin: 0 0 10px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 550px) {
+  .about_me {
+    flex-direction: row;
+  }
+}
