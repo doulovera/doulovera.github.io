@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy --output build",
     "serve": "eleventy --serve",
     "start": "eleventy --serve"
   },
