@@ -2,11 +2,15 @@
   --dark-primary: #171717;
 }
 
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 375px;
   background-color: var(--dark-primary);
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
 }
 
@@ -47,6 +51,8 @@ header nav a:hover {
 }
 
 main {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 0 10%;
 }
 
@@ -68,8 +74,9 @@ main {
 }
 
 .hero p {
-  width: 60%;
-  min-width: 280px;
+  max-width: 700px;
+  width: 80%;
+  min-width: 310px;
   font-size: 1.5rem;
 }
 
@@ -85,13 +92,15 @@ main {
 .about_me div {
   min-width: 280px;
   margin: 0 auto;
-  width: 50%;
+}
+
+.about_image-container {
+  width: 30%;
 }
 
 .about_me .square {
   aspect-ratio: 1/1;
-  max-height: 400px;
-  width: 100%;
+  width: 280px;
   background-color: gray;
   object-fit: cover;
   box-shadow: 10px 10px 20px 3px #0e0e0e;
@@ -101,6 +110,31 @@ main {
   margin: 0 0 10px;
 }
 
+.about_me div .social_media {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.social_media a {
+  display: block;
+  height: 35px;
+  width: 35px;
+  padding: 1px;
+  text-decoration: none;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+.social_media a:hover {
+  text-decoration: none;
+  border: 5px solid #394a99;
+}
+
+.social_media a img {
+  width: 35px;
+}
 
 
 
