@@ -1,14 +1,16 @@
 :root {
+  --app-min-width: 375px;
   --dark-primary: #171717;
 }
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  min-width: 375px;
+  min-width: var(--app-min-width);
   background-color: var(--dark-primary);
   color: #fff;
   line-height: 1.5;
@@ -29,12 +31,12 @@ header {
 }
 
 header a.logo {
-  font-size: 1.5rem;
+  font-size: 2.6rem;
 }
 
 header a {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.6rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -58,7 +60,7 @@ main {
 
 /* **** */
 .hero {
-  margin: 9rem 0 6rem;
+  margin: 15rem 0 9rem;
 }
 
 .hero img {
@@ -70,14 +72,14 @@ main {
 
 .hero h1 {
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 5.6rem;
 }
 
 .hero p {
   max-width: 700px;
   width: 80%;
   min-width: 310px;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 }
 
 /* **** */
@@ -107,7 +109,9 @@ main {
 }
 
 .about_me div p {
+  max-width: 465px;
   margin: 0 0 10px;
+  font-size: 1.8rem;
 }
 
 .about_me div .social_media {
@@ -136,6 +140,23 @@ main {
   width: 35px;
 }
 
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin: 10rem auto;
+}
+
+.project {
+  display: block;
+  max-width: 350px;
+  width: 80%;
+  min-width: 280px;
+  background-color: salmon;
+}
 
 
 

@@ -1,0 +1,8 @@
+{% macro project(title, image, languages, demoUrl='', repoUrl='') %}
+<article class="project">
+  <h3>{{ title }}</h3>
+  {% for language in languages %}
+    <p>{{ language }}</p>
+  {% endfor %}
+</article>
+{% endmacro %}1
